@@ -52,7 +52,7 @@ const GsapSlideshow = () => {
           className="absolute inset-0"
           style={{ opacity: index === 0 ? 1 : 0 }}
         >
-          <Image alt="" src={src} width={500} height={500} objectFit="cover" className="h-full w-full" />
+          <Image alt="" src={src} width={1000} height={1000} objectFit="cover" className="h-full w-full" />
         </div>
       ))}
       <div
