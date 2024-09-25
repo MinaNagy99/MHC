@@ -44,7 +44,7 @@ function News() {
   return (
     <>
       <TopSection data={news.topSection} />
-      <div className="grid lg:w-[75%]   w-full m-auto md:grid-cols-3 xsLgrid-col-1">
+      <div className="grid lg:w-[75%]   w-full m-auto lg:grid-cols-3 sm:grid-cols-2">
         {news.details.map((n, index) => {
           return (
             <div className="col-span-1 p-5" key={index}>
