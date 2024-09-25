@@ -19,10 +19,10 @@ function Firm() {
         </div>
         <div className="col-span-1">
           <Image
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
             className="w-full"
-            src="images/firmm.jpg"
+            src="/images/firmm.jpg"
             alt=""
           />
         </div>
