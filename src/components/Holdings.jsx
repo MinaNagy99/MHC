@@ -19,7 +19,7 @@ function Holdings() {
       },
     ],
     topSection: {
-      header: "HOLDINGS",
+      header: "INDUSTRY",
       paragraphs: [
         "One ship may sink..but an entire fleet can withstand storms!",
         "This is our principle at MHC in diversifying our investments in engineering",
