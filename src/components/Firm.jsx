@@ -10,9 +10,14 @@ function Firm() {
             OUR <span className="text-mainGold">FIRM</span>
           </p>
           <p className="md:mt-14 mt-5 text-md">
-            A different world of investment in innovative engineering ideas and
+            We’re a global long-term investor, building a fully integrated and
+            profitable portfolio
           </p>
-          <p> promising projects, transforming them into tangible reality</p>
+          <p>
+            {" "}
+            of specialized engineering companies across various industries with
+            global geographical presence.
+          </p>
           <button className="bg-mainGold rounded-xl px-5 py-1 md:mt-10 mt-5 ">
             View More
           </button>
