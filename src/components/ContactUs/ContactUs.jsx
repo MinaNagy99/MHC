@@ -15,7 +15,7 @@ function ContactUs() {
       },
       {
         icon: "fa-solid text-mainGold fa-location-dot",
-        text: "",
+        text: "#200, 1302 4th Street SW Calgary, AB T2R-0X8",
       },
     ],
     map: "images/map.png",
@@ -39,19 +39,19 @@ function ContactUs() {
 
   const [contactUs, setContactUs] = useState(initialContactUs);
 
-  useEffect(() => {
-    if (currentAddress && currentAddress.address) {
-      setContactUs((prevContactUs) => ({
-        ...prevContactUs,
-        details: prevContactUs.details.map((detail, index) => {
-          if (index === 1) {
-            return { ...detail, text: currentAddress.address };
-          }
-          return detail;
-        }),
-      }));
-    }
-  }, [currentAddress]);
+  // useEffect(() => {
+  //   if (currentAddress && currentAddress.address) {
+  //     setContactUs((prevContactUs) => ({
+  //       ...prevContactUs,
+  //       details: prevContactUs.details.map((detail, index) => {
+  //         if (index === 1) {
+  //           return { ...detail, text: currentAddress.address };
+  //         }
+  //         return detail;
+  //       }),
+  //     }));
+  //   }
+  // }, [currentAddress]);
 
   return (
     <div className="grid md:grid-cols-2 mb-10 items-center md:w-[80%] w-[98%] mt-10 m-auto">

@@ -3,13 +3,12 @@
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import TopSection from "./shared/TopSection";
 
-function Holdings() {
+function IndustrySlider() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 100,
+    speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
@@ -55,7 +54,7 @@ function Holdings() {
       },
       {
         name: "Marine",
-        image: "/images/marine.jpg",
+        image: "/images/marine.png",
       },
       {
         name: "Oil & Gas",
@@ -81,7 +80,6 @@ function Holdings() {
   };
   return (
     <>
-      <TopSection data={holdings.topSection} />{" "}
       <div className="slider-container ">
         <Slider {...settings}>
           {holdings.data.map((data, index) => {
@@ -112,4 +110,4 @@ function Holdings() {
   );
 }
 
-export default Holdings;
+export default IndustrySlider;

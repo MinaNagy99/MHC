@@ -1,6 +1,7 @@
 import ContactUs from "@/components/ContactUs/ContactUs";
 import Firm from "@/components/Firm";
 import Holdings from "@/components/Holdings";
+import IndustrySlider from "@/components/IndustrySlider";
 import News from "@/components/news";
 import Slider from "@/components/slider";
 import GSAPExample from "@/components/SliderGsap";
@@ -15,6 +16,7 @@ export default function Home() {
           <Firm />
           <Holdings />
           <News />
+        
           <ContactUs />
         </main>
       </AddressContextProvider>

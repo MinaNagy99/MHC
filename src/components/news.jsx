@@ -11,7 +11,7 @@ const news = {
   },
   details: [
     {
-      image: "/images/new1.jpeg",
+      image: "/images/adal.png",
       title:
         "We believe in continuously developing our team's capabilities. Adal is a new member of the MHC Group",
       paragraph:
@@ -20,7 +20,7 @@ const news = {
       tagName: "ARCH",
     },
     {
-      image: "/images/new2.jpg",
+      image: "/images/wolsey.png",
       title:
         "A new collaboration for development and support, assisting Wolsey in achieving its goal.",
       paragraph:
@@ -29,7 +29,7 @@ const news = {
       tagName: "ARCH",
     },
     {
-      image: "/images/new3.jpg",
+      image: "/images/kaller.png",
       title:
         "To help many people change their lifestyle for the better, we are now acquiring kallerarchitects",
       paragraph:
