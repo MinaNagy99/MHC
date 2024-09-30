@@ -29,9 +29,9 @@ function Navbar() {
           {/* Logo on the left */}
           <a href="/" className="flex flex-shrink-0 items-center">
             <Image
-              Map="responsive"
               width={100}
               height={100}
+              map="responsive"
               alt="Your Company"
               src="/images/logo.png"
               className="h-8 w-auto"

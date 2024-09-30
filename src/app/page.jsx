@@ -1,3 +1,5 @@
+"use client";
+
 import ContactUs from "@/components/ContactUs/ContactUs";
 import Firm from "@/components/Firm";
 import Holdings from "@/components/Holdings";
@@ -16,7 +18,6 @@ export default function Home() {
           <Firm />
           <Holdings />
           <News />
-        
           <ContactUs />
         </main>
       </AddressContextProvider>
