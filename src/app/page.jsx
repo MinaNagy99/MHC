@@ -1,5 +1,3 @@
-"use client";
-
 import ContactUs from "@/components/ContactUs/ContactUs";
 import Firm from "@/components/Firm";
 import Holdings from "@/components/Holdings";
@@ -8,6 +6,7 @@ import News from "@/components/news";
 import Slider from "@/components/slider";
 import GSAPExample from "@/components/SliderGsap";
 import AddressContextProvider from "@/context/addressContext";
+
 export default function Home() {
   return (
     <>

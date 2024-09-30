@@ -1,35 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
+import React from "react";
 import TopSection from "./shared/TopSection";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-// Dynamically import the Slider without SSR
-const Slider = dynamic(() => import("react-slick"), { ssr: false });
+import Slider from "react-slick";
 
 function Holdings() {
-  const [isSliderMounted, setIsSliderMounted] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const handleMount = () => {
-      if (typeof window !== "undefined") {
-        setIsSliderMounted(true);
-        setIsLoading(false); // Set loading to false when slider is ready
-      }
-    };
-
-    handleMount(); // Call the function to set the state
-
-    // Optionally: cleanup function if necessary
-    return () => {
-      setIsLoading(true); // Reset loading state if component unmounts
-    };
-  }, []);
-
   const settings = {
     dots: true,
     infinite: true,
@@ -111,34 +89,28 @@ function Holdings() {
 
       {/* Only render the slider once it's mounted */}
       <div className="slider-container">
-        {isLoading ? ( // Check loading state
-          <div>Loading...</div> // Show loading text
-        ) : (
-          isSliderMounted && ( // Only render slider if mounted
-            <Slider {...settings}>
-              {holdings.data.map((data, index) => (
-                <div key={index} className="p-5">
-                  <div className="relative">
-                    {/* Image Container */}
-                    <div className="w-full aspect-square relative">
-                      <Image
-                        quality={100}
-                        fill
-                        className="object-cover"
-                        src={data.image}
-                        alt={data.name}
-                      />
-                    </div>
-                    {/* Overlay Text */}
-                    <div className="flex justify-center items-center layerHolding absolute top-0 left-0 right-0 bottom-0">
-                      <p>{data.name}</p>
-                    </div>
-                  </div>
+        <Slider {...settings}>
+          {holdings.data.map((data, index) => (
+            <div key={index} className="p-5">
+              <div className="relative">
+                {/* Image Container */}
+                <div className="w-full aspect-square relative">
+                  <Image
+                    quality={100}
+                    fill
+                    className="object-cover"
+                    src={data.image}
+                    alt={data.name}
+                  />
                 </div>
-              ))}
-            </Slider>
-          )
-        )}
+                {/* Overlay Text */}
+                <div className="flex justify-center items-center layerHolding absolute top-0 left-0 right-0 bottom-0">
+                  <p>{data.name}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </>
   );
