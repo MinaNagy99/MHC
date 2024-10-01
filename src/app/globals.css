@@ -1,15 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url('https://your-font-cdn-link.com/acumin-variable.css');
 @import url('https://fonts.cdnfonts.com/css/acumin-pro');
 @import url('@fortawesome/fontawesome-svg-core/styles.css');
-
 @import url('react-slideshow-image/dist/styles.css');
-
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #000000;
@@ -45,28 +43,16 @@ body {
   background-color: #000000a1;
 }
 
-
 .image {
   background-image: url("/images/1.jpeg");
   background-position: center center;
   background-size: cover;
 }
 
-/* .image:hover {
-  transform: scale(5);
-  transition-duration: 5s;
-}
-.layer:hover {
-  transform: scale(5);
-  transform: translateX(20%);
-  transition-duration: 5s;
-} */
-
 .layerHolding {
   background-color: #0000009a;
   opacity: 1;
   transition: 1s;
-
 }
 
 .layerHolding:hover {

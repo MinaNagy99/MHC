@@ -8,6 +8,10 @@ export default function AboutPage() {
       <div className="md:px-24 px-9">
         <OurFirm />
         <Management />
+
+
+
+
       </div>
     </>
   );

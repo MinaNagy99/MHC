@@ -90,7 +90,6 @@ function IndustrySlider() {
                   <div className="w-full aspect-square relative">
                     <Image
                       quality={100}
-                      fill // For Next.js Image to make it responsive
                       className="object-cover"
                       src={data.image}
                       alt=""

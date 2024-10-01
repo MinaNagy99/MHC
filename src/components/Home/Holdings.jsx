@@ -9,11 +9,10 @@ import Slider from "react-slick";
 
 function Holdings() {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000, // Set autoplay speed
     arrows: false, // Disable arrows
@@ -84,10 +83,8 @@ function Holdings() {
 
   return (
     <>
-      {/* Render the top section immediately */}
       <TopSection data={holdings.topSection} />
 
-      {/* Only render the slider once it's mounted */}
       <div className="slider-container">
         <Slider {...settings}>
           {holdings.data.map((data, index) => (
@@ -101,9 +98,9 @@ function Holdings() {
                     className="object-cover"
                     src={data.image}
                     alt={data.name}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
-                {/* Overlay Text */}
                 <div className="flex justify-center items-center layerHolding absolute top-0 left-0 right-0 bottom-0">
                   <p>{data.name}</p>
                 </div>
