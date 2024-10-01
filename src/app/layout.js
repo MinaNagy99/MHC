@@ -1,4 +1,4 @@
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.css"; // Import FontAwesome CSS
 export const metadata = {
@@ -9,9 +9,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    
       <body>
-        {/* <Navbar /> */}
+        <Navbar />
 
         {children}
       </body>

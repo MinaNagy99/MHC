@@ -53,7 +53,7 @@ function News() {
                   <Image
                     width={500}
                     height={500}
-                    className="absolute top-0 left-0 w-full h-full object-cover"
+                    className="absolute top-0 left-0 w-full h-full  object-cover"
                     src={n.image}
                     alt=""
                   />

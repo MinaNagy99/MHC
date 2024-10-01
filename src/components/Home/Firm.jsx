@@ -5,7 +5,7 @@ import React from "react";
 function Firm() {
   return (
     <>
-      <div className="grid items-center grid-cols-2 bg-black px-2 md:ps-36 ">
+      <div className="grid items-center grid-cols-2 ps-2 md:ps-36  ">
         <div className="col-span-1">
           <p className="text-l inline border-b-4 border-mainGold pb-2">
             OUR <span className="text-mainGold">FIRM</span>
