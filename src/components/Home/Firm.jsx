@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Firm() {
@@ -13,14 +14,17 @@ function Firm() {
             We’re a global long-term investor, building a fully integrated and
             profitable portfolio
           </p>
-          <p>
+          <p className="mb-5">
             {" "}
             of specialized engineering companies across various industries with
             global geographical presence.
           </p>
-          <button className="bg-mainGold rounded-xl px-5 py-1 md:mt-10 mt-5 ">
+          <Link
+            href="/firm"
+            className="bg-mainGold rounded-xl px-5 py-1 md:mt-10 mt-5 "
+          >
             View More
-          </button>
+          </Link>
         </div>
         <div className="col-span-1">
           <Image

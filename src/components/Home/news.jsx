@@ -1,5 +1,5 @@
 import React from "react";
-import TopSection from "./shared/TopSection";
+import TopSection from "../shared/TopSection";
 import Image from "next/image";
 const news = {
   topSection: {

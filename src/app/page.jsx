@@ -1,21 +1,26 @@
-import ContactUs from "@/components/ContactUs/ContactUs";
-import Firm from "@/components/Firm";
-import Holdings from "@/components/Holdings";
-import IndustrySlider from "@/components/IndustrySlider";
-import News from "@/components/news";
-import Slider from "@/components/slider";
-import GSAPExample from "@/components/SliderGsap";
+"use client";
+import ContactUs from "@/components/Home/ContactUs/ContactUs";
+import Firm from "@/components/Home/Firm";
+import Holdings from "@/components/Home/Holdings";
+import News from "@/components/Home/news";
+import GSAPExample from "@/components/Home/SliderGsap";
 import AddressContextProvider from "@/context/addressContext";
+  import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    // Set flag to indicate client-side rendering has occurred
+    setIsClient(true);
+  }, []);
   return (
     <>
+      {console.log(isClient)}
       <AddressContextProvider>
         <main style={{ fontFamily: "Georgia, serif" }}>
-          {/* <Slider /> */}
           <GSAPExample />
           <Firm />
-          <Holdings />
+          {isClient ? <Holdings /> : <p>Loading</p>}
           <News />
           <ContactUs />
         </main>

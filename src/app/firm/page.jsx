@@ -1,8 +1,14 @@
+import Management from "@/components/About/Management";
+import OurFirm from "@/components/About/OurFirm";
+
 // app/about/page.jsx
 export default function AboutPage() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1 className="text-xl">Firm Page</h1>
-    </div>
+    <>
+      <div className="px-24">
+        <OurFirm />
+        <Management />
+      </div>
+    </>
   );
 }
