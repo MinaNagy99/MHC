@@ -6,21 +6,26 @@ function Management() {
   const management = { header: "Manangement", className: "text-start" };
   return (
     <>
-      <div className="grid grid-cols-2 items-center">
+      <div className="grid md:grid-cols-2 xs:grid-cols-3 items-center">
         <div className="col-span-1">
           <TopSection data={management} />
-          <p className="my-8">
-            The senior management team members of the company have over 75 years
-            of EPC engineering and investment management expertise.
-          </p>
-          <p>
-            Our highest management body, comprising our functional and
-            investment heads, deliberates on management proposals on investment,
-            risks and oversees all major business, governance, and policy issues
-            concerning the group and company holdings as a whole.
-          </p>
+
+          <div className="my-8">
+            {" "}
+            <p>
+              The senior management team members of the company have over 75
+              years of EPC engineering and investment management expertise.
+            </p>
+            <p className="mt-8">
+              Our highest management body, comprising our functional and
+              investment heads, deliberates on management proposals on
+              investment, risks and oversees all major business, governance, and
+              policy issues concerning the group and company holdings as a
+              whole.
+            </p>
+          </div>
         </div>
-        <div className="col-span-1   p-20">
+        <div className="col-span-1 p-20">
           <Image
             src="/images/management.jpg"
             width={500}

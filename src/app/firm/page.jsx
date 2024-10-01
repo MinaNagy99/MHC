@@ -5,7 +5,7 @@ import OurFirm from "@/components/About/OurFirm";
 export default function AboutPage() {
   return (
     <>
-      <div className="px-24">
+      <div className="md:px-24 px-9">
         <OurFirm />
         <Management />
       </div>

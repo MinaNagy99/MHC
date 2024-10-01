@@ -5,7 +5,7 @@ import Image from "next/image";
 function OurFirm() {
   return (
     <>
-      <div className="h-screen mt-28">
+      <div className=" mt-28">
         <p className="text-l inline border-b-4 border-mainGold pb-2">
           OUR <span className="text-mainGold">FIRM</span>
         </p>
