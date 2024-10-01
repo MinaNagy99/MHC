@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Holdings = dynamic(() =>
-  import("../components/Home/Holdings.jsx", { ssr: false })
+  import("../components/Home/InsutrySlider/Holdings.jsx", { ssr: false })
 );
 export default function Home() {
   return (

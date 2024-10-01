@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import React from "react";
-import TopSection from "../shared/TopSection";
+import TopSection from "../../shared/TopSection";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import NextArrow from "./arrows/NextArrow";
+import PreArrow from "./arrows/preArrow";
 
 function Holdings() {
   const settings = {
@@ -13,9 +15,11 @@ function Holdings() {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PreArrow />,
     autoplay: true,
     autoplaySpeed: 2000, // Set autoplay speed
-    arrows: false, // Disable arrows
+    arrows: true, // Disable arrows
     responsive: [
       {
         breakpoint: 1024,
@@ -85,7 +89,7 @@ function Holdings() {
     <>
       <TopSection data={holdings.topSection} />
 
-      <div className="slider-container">
+      <div className="slider-container w-[85%] m-auto relative">
         <Slider {...settings}>
           {holdings.data.map((data, index) => (
             <div key={index} className="p-5">
